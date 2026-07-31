@@ -1,16 +1,21 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Interactuable : MonoBehaviour
 {
-    private bool jugadorCerca = false;
+    protected bool closePlayer = false;
+
+    [Header("UI References")]
+    [SerializeField] protected DialogueUI dialogueUI;
     void Update()
     {
-        if (jugadorCerca && Input.GetKeyDown(KeyCode.E))
+        if (closePlayer && Input.GetKeyDown(KeyCode.E))
         {
             Interactuar();
         }
     }
-    void Interactuar ()
+    protected virtual void Interactuar ()
     {
         Debug.Log("Holi");
     }
@@ -18,16 +23,21 @@ public class Interactuable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            jugadorCerca = true;
+            closePlayer = true;
             Debug.Log("Presiona E para interactuar");
+            
         }
     }
-    private void OnTriggerExit2D (Collider2D other)
+    protected virtual void OnTriggerExit2D (Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            jugadorCerca = false;
+            closePlayer = false;
             Debug.Log("Jugador se alejó");
+            if (dialogueUI != null && dialogueUI.EstaActivo)
+            {
+                dialogueUI.CerrarDialogo();
+            }
         }
     }
 }
