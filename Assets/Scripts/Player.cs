@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
     public float velocidad = 5f; //velocidad del jugador
     private Rigidbody2D rb2d;
     private float movimiento;
+    [SerializeField] private AudioSource musiquita;
 
     void Start()
     {

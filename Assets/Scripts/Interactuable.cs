@@ -5,6 +5,7 @@ using TMPro;
 public class Interactuable : MonoBehaviour
 {
     protected bool closePlayer = false;
+    [SerializeField] private AudioSource select;
 
     [Header("UI References")]
     [SerializeField] protected DialogueUI dialogueUI;
@@ -13,6 +14,7 @@ public class Interactuable : MonoBehaviour
         if (closePlayer && Input.GetKeyDown(KeyCode.E))
         {
             Interactuar();
+            select.Play();
         }
     }
     protected virtual void Interactuar ()
