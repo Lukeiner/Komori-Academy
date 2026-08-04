@@ -7,6 +7,7 @@ public class DialogueObject : Interactuable
     [TextArea(3, 5)]
     [SerializeField] private string japaneseText;
     [SerializeField] private Sprite ilustration;
+    [SerializeField] private Sprite dayImage;
 
     protected override void Interactuar()
     {

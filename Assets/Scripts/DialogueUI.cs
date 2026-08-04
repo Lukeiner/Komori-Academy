@@ -7,10 +7,11 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private Image image;
+    [SerializeField] private Image imageDay;
 
     public bool EstaActivo => dialoguePanel.activeSelf;
 
-    public void ShowDialogue (string text, Sprite boceto = null)
+    public void ShowDialogue (string text, Sprite boceto = null, Sprite rutina = null)
     {
         dialogueText.text = text;
 
@@ -23,6 +24,12 @@ public class DialogueUI : MonoBehaviour
         else
         {
             image.gameObject.SetActive(false);
+        }
+
+        if (rutina != null)
+        {
+            imageDay.sprite = rutina;
+            imageDay.gameObject.SetActive(true);
         }
 
         dialoguePanel.SetActive(true);
