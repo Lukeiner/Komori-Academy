@@ -6,7 +6,6 @@ public class Interactuable : MonoBehaviour
 {
     protected bool closePlayer = false;
     [SerializeField] private AudioSource select;
-
     [Header("UI References")]
     [SerializeField] protected DialogueUI dialogueUI;
     void Update()
@@ -26,8 +25,7 @@ public class Interactuable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             closePlayer = true;
-            Debug.Log("Presiona E para interactuar");
-            
+            Debug.Log("Presiona E para interactuar");    
         }
     }
     protected virtual void OnTriggerExit2D (Collider2D other)

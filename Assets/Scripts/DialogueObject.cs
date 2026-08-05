@@ -22,7 +22,7 @@ public class DialogueObject : Interactuable
         else
         {
             // Si estaba cerrado, le mandamos el texto y el dibujo a la UI para que los muestre
-            dialogueUI.ShowDialogue(japaneseText, ilustration);
+            dialogueUI.ShowDialogue(japaneseText, ilustration, dayImage);
         }
 
     }
