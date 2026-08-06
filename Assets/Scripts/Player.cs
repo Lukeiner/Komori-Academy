@@ -26,6 +26,12 @@ public class Player : MonoBehaviour
 
         animator.SetFloat("Horizontal", movementInput.x);
         animator.SetFloat("Speed", movementInput.magnitude);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Saliendo");
+        }
     }
     private void FixedUpdate()
     {

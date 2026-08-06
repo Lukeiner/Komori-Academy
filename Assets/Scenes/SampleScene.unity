@@ -6120,7 +6120,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2cd91c585cae0bd4d804b0dc0c48b03b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6128,7 +6128,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.0379448
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -6219,7 +6219,7 @@ MonoBehaviour:
   select: {fileID: 168605416}
   dialogueUI: {fileID: 742815098}
   japaneseText: "\u3060\u3044\u304C\u304F\u3067\u3079\u3093\u304D\u3087\u3046\u3057\u3066\u3001\u3055\u3044\u3054\u306B\u306B\u307B\u3093\u3054\u3092\u3079\u3093\u304D\u3087\u3046\u3057\u307E\u3059\n
-    (Etudio en la universidad y al final estudio japones)"
+    (Estudio en la universidad y al final estudio japones)"
   ilustration: {fileID: 21300000, guid: d122b0828499a194daa95a8a942d67cb, type: 3}
   dayImage: {fileID: -5895900120273350, guid: 5a8e16931d516da4abcc1d1d95549add, type: 3}
 --- !u!58 &168605418
@@ -15349,7 +15349,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2cd91c585cae0bd4d804b0dc0c48b03b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -15521,7 +15521,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0000007748604, y: 0.0063904673}
+  m_Offset: {x: 0.0000007748604, y: 0.042060256}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15531,7 +15531,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.27376425, y: 0.2658703}
+  m_Size: {x: 0.27376425, y: 0.19453073}
   m_EdgeRadius: 0
 --- !u!199 &1254719396
 ParticleSystemRenderer:
@@ -25888,7 +25888,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2cd91c585cae0bd4d804b0dc0c48b03b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25986,8 +25986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   select: {fileID: 1582307820}
   dialogueUI: {fileID: 742815098}
-  japaneseText: "\u30EC\u30B9\u30C8\u30E9\u30F3\u3067\u30A6\u30A7\u30A4\u30BF\u30FC\u3068\u3057\u3066\u306F\u305F\u3089\u3044\u3066\u3001\u304A\u304D\u3083\u304F\u3055\u3093\u3092\u305B\u3063\u304D\u3083\u304F\u3057\u307E\u3059
-    (Trabajo como mozo en un restaurante y atiendo a los clientes)"
+  japaneseText: "\u30A4\u30D9\u30F3\u30C8\u3067\u306F\u305F\u3089\u3044\u3066\u3001\u304A\u304D\u3083\u304F\u3055\u3093\u3092\u305B\u3063\u304D\u3083\u304F\u3057\u307E\u3059
+    (Trabajo en eventos y atiendo a los clientes)"
   ilustration: {fileID: 21300000, guid: d122b0828499a194daa95a8a942d67cb, type: 3}
   dayImage: {fileID: 5874013504579922518, guid: 56d49c490ce39504bae278f37625229e, type: 3}
 --- !u!58 &1582307822
